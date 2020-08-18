@@ -1,0 +1,884 @@
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#headerMain{
+    height: 100vh !important;
+    
+}
+
+
+
+.start-1 img{
+  max-width: 100%;
+}
+
+#header {
+    background-image: linear-gradient(to right, #506CEE, #5A26DB);
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.particles-js-canvas-el{
+    position: absolute;
+}
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar {
+    z-index: 10;
+    position: fixed;
+    background-color:transparent;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+    height: 15%;
+    transition: 0.5s;
+}
+.scrolled{
+    background-color: white;
+    height: 10%;
+    -webkit-box-shadow: 0px 8px 32px -13px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 8px 32px -13px rgba(0,0,0,0.42);
+    box-shadow: 0px 8px 32px -13px rgba(0,0,0,0.42);
+}
+
+.overlay {
+    position: absolute;
+    z-index: 11;
+}
+
+
+
+.logo{ 
+ 
+    max-width: 180px;
+    margin-left: 0;
+    padding-left: 0;
+    transition: 0.5s;
+ 
+}
+strong{
+  font-weight: 600;
+}
+#header h1{
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+    font-size: 85px;
+    text-align: center;
+    color: white;
+}
+#header h2 {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+    font-size: 75px;
+    text-align: center;
+    color: white;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 50px;
+}
+
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 3s infinite;
+	-webkit-animation: arrow 3s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:-0.2s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.contactBtn{
+  width: 120px;
+  height: 45px;
+    background-color: transparent;
+    color: white;
+    border-radius: 150px;
+    
+    border-color: white;
+    border-width: 2px;
+    font-size:19px;
+    font-family: 'Rubik' sans-serif;
+    font-weight: 400;
+    transition:0.5s;
+}
+.contBtn{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+ 
+  .header2 {
+   
+      padding-top:10%;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #506CEE, #5A26DB);
+    color: white;
+    width: 100vw;
+    padding-right:0 ;
+  }
+ 
+  .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 10%;
+    max-height: 15%;
+  }
+  .content {
+    position: relative;
+    height: 50%;
+    text-align: center;
+    background-color: white;
+  }
+  /* Animation */
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 50px;
+      min-height: 50px;
+    }
+    .content {
+      height: 100px;
+    }
+    .header2 {
+      padding-top:30%;}
+    
+  }
+  .divider{
+    display: flex;
+    justify-content: center;
+  }
+  .nav-icon{
+    margin-left: 25px;
+  }
+.nav-icon>div{
+    
+    width: 26px;
+    height: 3px;
+    margin: 5px 0 5px 0;
+    
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .nav-icon:hover .ni1{
+    transform: scaleX(0.5);
+  }
+
+  .start-1{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.start-1 img{
+    padding-top: 5%;
+}
+
+
+.start-2{
+    font-family: 'Rubik', sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding:0 8% 0 8%;
+}
+.start-2 h3{
+    
+    color: #2E3280;
+    font-size: 33px;
+    font-weight: 700;
+}
+.start-2 p{
+    font-size: 20px;
+    color:#7E7E7E;
+    text-align: justify;
+}
+mark{
+  margin-left: 0;
+  padding-left: 0;
+    color:#38CB89;
+    background-color: transparent;
+}
+#services{
+  margin-top: 1%;
+  background-color:white;
+}
+.domain{
+  padding-top: 10%;
+}
+.domainImg img{
+  position: relative;
+  margin-top: -25%;
+  max-width: 100%;
+  min-width: 450px;
+  
+  
+}
+.web img{
+  position: relative;
+  max-width: 100%;
+  min-width: 450px;
+  
+}
+.app img{
+  max-width: 100%;
+  position: relative;
+  margin-left: 20%;
+  margin-top: -6%;
+  min-width: 400px;
+}
+.onlinemarket img{
+  position: relative;
+  max-width: 100%;
+  min-width: 350px;
+}
+.appdev img{
+  position: relative;
+  max-width: 100%;
+  min-width: 400px;
+}
+.commerce img{
+  position: relative;
+  max-width: 100%;
+  min-width: 350px;
+}
+.serviceBody{
+  margin-top: -1%;
+  background: linear-gradient(to bottom, #F8F8F8, #E3E9FF);
+}
+.serviceText  {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-right: 8%;
+  padding-left: 8%;
+  text-align: justify;
+}
+
+
+.serviceText h3{
+  
+  font-weight: 700;
+  font-size: 45px;
+  z-index: 1;
+
+}
+.serviceText p{
+ 
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+  z-index: 1;
+  
+}
+
+
+
+sup{
+  position: relative;
+  color: #8972EF;
+  opacity: 0.2;
+  font-size: 110px;
+  font-weight: 800;
+  vertical-align: baseline;
+  transform: translateY(-50%);
+  transform: translateX(80%);
+  line-height: -1;
+  z-index: -1;
+  display: block;
+  
+  
+  
+}
+
+
+.onlinemarket{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.web{
+  margin-top: 6%;
+}
+.app{
+  margin-top: 6%;
+}
+.appdev{
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+
+.aboutUs{
+  position: relative;
+  font-family: 'Rubik' sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: justify;
+}
+
+.aboutUs h3{
+ font-family: 'Rubik' sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  z-index: 2;
+  color:#38CB89;
+}
+.aboutUs p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+  z-index: 2;
+  /*word-spacing: 10px;*/
+}
+.aboutImg img{
+  z-index: -2;
+  
+  max-width: 100%;
+}
+.contactrow{
+
+  background-image: linear-gradient(to bottom, #6261E7, #9C7AF2);
+}
+.contactForm{
+  font-family: 'Lato', georgia;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form {
+  max-width: 90%;
+  margin: 0 auto;
+  opacity: 1;
+  z-index: 8;
+}
+
+label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: 'Lato', georgia;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: text;
+}
+
+textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  
+  resize: none;
+  width: 90%;
+  border-color: rgba(255, 255, 255, 0)
+}
+
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 1);
+}
+
+textarea:focus:required:valid {
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+textarea:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input:required:invalid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgba(255, 255, 255, 1)
+}
+
+.send-icn:hover {
+  fill: #2E1C6E;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
+
+button:hover small {
+  opacity: 1;
+}
+
+small {
+  color: #2E1C6E;
+  display: block;
+  opacity: 0;
+}
+
+.website {
+  opacity: 1;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 7%;
+  
+}
+
+.website a {
+  color: white;
+}
+.contactImg {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactImg img{
+  max-width: 80%;
+}
+.add img{
+  max-width: 50%;
+  min-width: 150px;
+}
+.contdata p{
+  padding-left: 5%;
+  font-size: 18px;
+  font-weight: 400;
+  color:grey;
+}
+.contdata{
+  padding: 2% 10%;
+}
+.contlogo{
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.eno{
+  padding-top: 4%;
+  padding-left: 8%;
+
+  font-family: 'Rubik' sans-serif;
+}
+.eno h5{
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5%;
+}
+.eno h6{
+  font-weight: 700;
+}
+i {
+  font-size: 15px;
+  color: #2E1C6E;
+}
+
+.copyright p{
+  font-size: 15px;
+  color: grey;
+
+}
+.contactcover{
+  background: rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 95%;
+  border-radius: 20px;
+}
+.contactheading{
+  background-color:#6261E7 ;
+  padding-bottom: 2%;
+}
+
+.contactheading h4{
+  font-family: 'Rubik' sans-serif;
+  color: white;
+  font-size: 45px;
+  font-weight: 650;
+  padding-bottom: 0.5%;
+}
+.headingService h4{
+  font-family: 'Rubik' sans-serif;
+  position: relative;
+      margin-top: -7%;
+      font-size: 45px;
+      font-weight: 650;
+      color:#38CB89 ;
+}
+.headingabout h4{
+  font-family: 'Rubik' sans-serif;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  font-size: 45px;
+  font-weight: 650;
+  color:#38CB89 ;
+  z-index: 2;
+}
+.btn{
+
+  margin: 0;
+}
+.startbtn{
+ background-color:#38CB89 ;
+ color: white;
+ padding: 7px 25px;
+ transition: 0.5s;
+}
+.startbtn:hover{
+  background-color: transparent;
+  color:#38CB89;
+  border: 1.5px solid #38CB89;
+  transform: translateY(-20%);
+}
+.btnStyle{
+  
+  background-color:#6261E7 ;
+  color: white;
+  padding: 7px 25px;
+  transition: 0.5s;
+ }
+ .btnStyle:hover{
+   background-color: transparent;
+   color:#6261E7;
+   border: 1.5px solid #6261E7;
+   transform: translateY(-20%);
+ }
+.serviceImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-left{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logoCont{
+  margin-left: 4%;
+}
+.headingService, .headingabout, .contactheading{
+  font-family: 'Rubik' sans-serif;
+}
+.waveBtm{
+  margin-top: 6.5%;
+}
+
+/*For Mobiles*/
+@media only screen and (max-width: 575px) {
+  #services{
+    padding-top: 50px;
+  }
+ 
+  #start{
+    margin-bottom: 10%;
+  }
+  .domainImg{
+    margin-top: 25%;
+  }
+  .serviceBody{
+    margin-top: -2%;
+  }
+  .serviceText{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    
+    
+  }
+  .serviceText h3{
+    font-size: 26px;
+  }
+  
+  .serviceText p{
+    font-size: 16.5px;
+    font-weight: 400;
+  }
+  sup{
+    transform: translateX(72.5%);
+    font-size: 80px;
+    font-weight: 700;
+  }
+  .aboutUs{
+   
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .aboutUs p{
+    word-spacing: 2px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+	#about{
+    margin-bottom: -15%;
+		
+    
+  }
+  
+  #contact-form p{
+    font-size: 20px;
+    
+  }
+  input{
+    font-size: 20px;
+  }
+  textarea{
+    font-size: 20px;
+  }
+  .eno  p{
+    font-size: 18px;
+  }
+  .add p{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #header h2{
+    font-size: 28px;
+  }
+  #header h1{
+    font-size: 33px;
+  }
+
+  .start-2 p{
+    font-size: 19px;
+   }
+   .nav-icon{
+     margin-left: 5px;
+   }
+   .headingabout h4,.headingService h4,.contactheading h4{
+     font-size: 36px;
+   }
+   .start-2{
+     padding-top: 50px;
+   }
+   .contBtn{
+     visibility: hidden;
+   }
+   .logoCont{
+     margin-left: 44px;
+   }
+}
+@media only screen and (max-width: 900px) and (min-width: 576px)  {
+
+  sup{
+    transform: translateX(60%);
+  }
+  .aboutUs p{
+    word-spacing: 2px;
+  }
+  .aboutImg{
+    
+    padding-top: 200px;
+  }
+  #header h1{
+    font-size: 65px;
+  }
+  #header h2{
+    font-size: 50px;
+  }
+  #services img{
+    margin-top: 10px;
+  }
+  .serviceText{
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 901px)  {
+  sup{
+    transform: translateX(60%);
+  }
+  #header h2{
+    font-size: 55px;
+  }
+  #header h1{
+    font-size: 65px;
+  }
+}
