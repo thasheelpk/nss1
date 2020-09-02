@@ -332,6 +332,15 @@
       line-height: 54px;
    }
 
+    /* Go To down Button */
+    #go-down { margin-left: -22px; }
+    #go-down a {
+       width: 54px;
+       height: 54px;
+       font-size: 18px;
+       line-height: 54px;
+    }
+
 
 }
 
